@@ -17,7 +17,7 @@ To build a CNN-based image classification model that can **detect the type of di
 
 ## 🖼️ User Interface Preview
 Here’s a look at the interactive Streamlit interface:
-![Streamlit App Interface](image/User_interface.png)
+![Streamlit App Interface](image/User_Interface.png)
 
 ## 🧠 Deep Learning Pipeline
 ```
