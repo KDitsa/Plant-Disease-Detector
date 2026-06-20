@@ -142,9 +142,10 @@ Input: 128x128x3  →  Conv2D(32, 3x3, ReLU)  →  Conv2D(32, 3x3, ReLU)  →  M
 ---
 
 ## ⚠️ Challenges Faced
-- **Dataset imbalance:** Some disease classes had significantly fewer samples, which made it challenging to train a balanced model.
-- **High training time:** The dataset size (~1.3 GB) led to longer training durations, requiring considerable computational resources.
-
+- Dataset imbalance across certain disease categories affected model performance consistency.
+- Computational constraints while training on a ~1.3 GB dataset increased experimentation time.
+- Managing model complexity while maintaining inference speed and accuracy required several iterations.
+  
 ## ✨ Future Enhancements
 - Integrate Grad-CAM visualizations for explainable predictions.
 - Provide disease-specific remedy and prevention recommendations.
@@ -153,4 +154,4 @@ Input: 128x128x3  →  Conv2D(32, 3x3, ReLU)  →  Conv2D(32, 3x3, ReLU)  →  M
 - Add real-time camera capture functionality.
 
 ## 📝 Closing Thoughts
-This project demonstrates how modern deep learning methods can be applied to real-world agricultural problems, bringing accessibility and speed to early disease diagnosis. Future improvements include integrating a live camera capture, real-time disease remedy suggestions, and support for multilingual UI.
+This project demonstrates how modern deep learning methods can be applied to real-world agricultural problems, bringing accessibility and speed to early disease diagnosis. Future enhancements include explainable predictions using Grad-CAM, transfer learning with EfficientNet-based architectures, disease remedy recommendations, multilingual support, and real-time camera integration.
