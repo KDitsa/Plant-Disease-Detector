@@ -1,6 +1,6 @@
 # 🌿 Plant Disease Detector
 ## 📘 Overview
-Leaf Disease Classifier is a **deep learning project** developed in *April 2025* to identify and classify plant leaf diseases from images using a **Convolutional Neural Network (CNN)**. The system combines a high-performing image classification model with an intuitive **Streamlit interface**, allowing users to upload leaf images and receive real-time disease predictions.
+Leaf Disease Classifier is a **deep learning project** developed in *April 2025* to identify and classify plant leaf diseases from images using a **Convolutional Neural Network (CNN)**. The system combines a custom CNN-based image classification model with an intuitive **Streamlit interface**, allowing users to upload leaf images and receive real-time disease predictions.
 
 Built with TensorFlow/Keras, this tool aids farmers, researchers, and agritech services in **quickly diagnosing crop health** using only a smartphone or desktop browser
 
@@ -111,7 +111,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Once running, the app will open by default in your browser at http://localhost:8501, where you can input your data and get price predictions instantly.
+Once running, the app will open by default in your browser at http://localhost:8501, where you can upload leaf images and receive disease predictions instantly.
 
 ## 🛠️ Implementation Journey
 ### 1. 🔎 Exploratory Data Analysis (EDA)
@@ -144,6 +144,13 @@ Input: 128x128x3  →  Conv2D(32, 3x3, ReLU)  →  Conv2D(32, 3x3, ReLU)  →  M
 ## ⚠️ Challenges Faced
 - **Dataset imbalance:** Some disease classes had significantly fewer samples, which made it challenging to train a balanced model.
 - **High training time:** The dataset size (~1.3 GB) led to longer training durations, requiring considerable computational resources.
+
+## ✨ Future Enhancements
+- Integrate Grad-CAM visualizations for explainable predictions.
+- Provide disease-specific remedy and prevention recommendations.
+- Incorporate transfer learning using EfficientNet or other pretrained architectures for improved generalization.
+- Support multilingual interfaces and mobile deployment.
+- Add real-time camera capture functionality.
 
 ## 📝 Closing Thoughts
 This project demonstrates how modern deep learning methods can be applied to real-world agricultural problems, bringing accessibility and speed to early disease diagnosis. Future improvements include integrating a live camera capture, real-time disease remedy suggestions, and support for multilingual UI.
